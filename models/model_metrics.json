@@ -1,0 +1,86 @@
+{
+  "model": "RandomForestClassifier",
+  "version": "1.0",
+  "training_samples": 75000,
+  "test_samples": 15000,
+  "features": [
+    "current_attendance",
+    "present_classes",
+    "absent_classes",
+    "total_classes",
+    "remaining_classes",
+    "weekly_subject_classes",
+    "minimum_attendance",
+    "planned_leave_classes",
+    "days_remaining",
+    "absence_rate",
+    "future_attendance_after_leave"
+  ],
+  "accuracy": 0.9995333333333334,
+  "precision": 0.9995372129849565,
+  "recall": 0.9995333333333334,
+  "f1_score": 0.9995342303884132,
+  "confusion_matrix": [
+    [
+      9835,
+      0,
+      3
+    ],
+    [
+      0,
+      4323,
+      4
+    ],
+    [
+      0,
+      0,
+      835
+    ]
+  ],
+  "classification_report": {
+    "HIGH": {
+      "precision": 1.0,
+      "recall": 0.999695059971539,
+      "f1-score": 0.9998475067351192,
+      "support": 9838.0
+    },
+    "LOW": {
+      "precision": 1.0,
+      "recall": 0.9990755719898313,
+      "f1-score": 0.9995375722543353,
+      "support": 4327.0
+    },
+    "MEDIUM": {
+      "precision": 0.9916864608076009,
+      "recall": 1.0,
+      "f1-score": 0.9958258795468098,
+      "support": 835.0
+    },
+    "accuracy": 0.9995333333333334,
+    "macro avg": {
+      "precision": 0.9972288202692003,
+      "recall": 0.9995902106537901,
+      "f1-score": 0.9984036528454214,
+      "support": 15000.0
+    },
+    "weighted avg": {
+      "precision": 0.9995372129849565,
+      "recall": 0.9995333333333334,
+      "f1-score": 0.9995342303884132,
+      "support": 15000.0
+    }
+  },
+  "feature_importance": {
+    "current_attendance": 0.11211282873250687,
+    "present_classes": 0.026295618684084004,
+    "absent_classes": 0.05592975026633815,
+    "total_classes": 0.01612911877582606,
+    "remaining_classes": 0.009207017765564903,
+    "weekly_subject_classes": 0.002085174197151908,
+    "minimum_attendance": 0.23137883907910375,
+    "planned_leave_classes": 0.0655968558768756,
+    "days_remaining": 0.005827838780780543,
+    "absence_rate": 0.14416460426301378,
+    "future_attendance_after_leave": 0.33127235357875445
+  }
+}
